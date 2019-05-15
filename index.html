@@ -3,6 +3,7 @@
 	<head>
 		<title>Home</title>
 		<link rel="icon" href="./favicons/favicon-eye.ico" type="image/x-icon" />
+
 		<style>
 			body,
 			html {
@@ -10,6 +11,11 @@
 				padding: 0;
 				overflow: hidden;
 				background-color: black;
+				color: white;
+			}
+
+			a {
+				padding: 5%;
 			}
 
 			img {
@@ -41,18 +47,18 @@
 
 	<body>
 		<div id="grid" class="grid">
-			<a href="http://gmail.com"><img src="./svg/Gmail.svg"/></a>
-			<a href="http://youtube.com"><img src="./svg/YouTube.svg"/></a>
-			<a href="http://netflix.com"><img src="./svg/Netflix.svg"/></a>
-			<a href="http://discover.com"><img src="./svg/Discover.svg"/></a>
-			<a href="https://citrixmgn-rs.netl.doe.gov/Citrix/NETLXA7ExternalProdWeb/"><img src="./svg/Citrix.svg"/></a>
-			<a href="http://amazon.com"><img src="./svg/Amazon.svg"/></a>
+			<a href="https://gmail.com"><img src="./svg/gmail.svg"/></a>
+			<a href="https://youtube.com"><img src="./svg/youtube.svg"/></a>
+			<a href="https://netflix.com"><img src="./svg/netflix.svg"/></a>
+			<a href="https://messages.google.com/web/conversations"><img src="./svg/messages.svg"/></a>
+			<a href="https://citrixmgn-rs.netl.doe.gov/Citrix/NETLXA7ExternalProdWeb/"><img src="./svg/citrix.svg"/></a>
+			<a href="https://www.amazon.com"><img src="./svg/amazon.svg"/></a>
 		</div>
 	</body>
 
 	<script type="text/javascript">
 		window.onload = function() {
-			Array.from(document.getElementById('grid').children).forEach((cell) => {
+			Array.from(document.getElementById('grid').children).forEach(cell => {
 				cell.style.background = `linear-gradient(to top right, #000000, hsl(${Math.random() * 360},25%,15%))`;
 			});
 		};
